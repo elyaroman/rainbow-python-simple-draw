@@ -1,0 +1,177 @@
+import simple_draw as sd
+from colour import Color
+
+
+def set_color():
+    colorsRO = list(Color("red").range_to(Color("orange"), 20))
+    colorsRO = [str(color) for color in colorsRO]
+
+    colorsOY = list(Color("orange").range_to(Color("yellow"), 24))
+    colorsOY = [str(color) for color in colorsOY]
+
+    colorsYG = list(Color("yellow").range_to(Color("#abff00"), 14))
+    colorsYG = [str(color) for color in colorsYG]
+
+    colorsYG1 = list(Color("#abff00").range_to(Color("#00ffa2"), 24))
+    colorsYG1 = [str(color) for color in colorsYG1]
+
+    colorsGC = list(Color("#00ffa2").range_to(Color("#0ff"), 14))
+    colorsGC = [str(color) for color in colorsGC]
+
+    colorsCB = list(Color("#0ff").range_to(Color("blue"), 24))
+    colorsCB = [str(color) for color in colorsCB]
+
+    colorsBP = list(Color("blue").range_to(Color("purple"), 24))
+    colorsBP = [str(color) for color in colorsBP]
+
+    colors = colorsRO + colorsOY[1:] + colorsYG + colorsYG1[1:] + colorsGC[1:] + colorsCB[1:] + colorsBP[1:22]
+    draw_rainbow(colors)
+
+
+def set_color1():
+    colorsRO = list(Color("#f99").range_to(Color("orange"), 20))
+    colorsRO = [str(color) for color in colorsRO]
+
+    colorsOY = list(Color("orange").range_to(Color("yellow"), 24))
+    colorsOY = [str(color) for color in colorsOY]
+
+    colorsYG = list(Color("yellow").range_to(Color("#abff00"), 14))
+    colorsYG = [str(color) for color in colorsYG]
+
+    colorsYG1 = list(Color("#abff00").range_to(Color("#00ffa2"), 24))
+    colorsYG1 = [str(color) for color in colorsYG1]
+
+    colorsGC = list(Color("#00ffa2").range_to(Color("#0ff"), 14))
+    colorsGC = [str(color) for color in colorsGC]
+
+    colorsCB = list(Color("#0ff").range_to(Color("blue"), 24))
+    colorsCB = [str(color) for color in colorsCB]
+
+    colorsBP = list(Color("blue").range_to(Color("purple"), 24))
+    colorsBP = [str(color) for color in colorsBP]
+
+    colors = colorsRO + colorsOY[1:] + colorsYG + colorsYG1[1:] + colorsGC[1:] + colorsCB[1:] + colorsBP[1:22]
+    draw_rainbow(colors)
+
+
+def set_color2():
+    colorsOY = list(Color("orange").range_to(Color("yellow"), 30))
+    colorsOY = [str(color) for color in colorsOY]
+
+    colorsYG = list(Color("yellow").range_to(Color("#abff00"), 16))
+    colorsYG = [str(color) for color in colorsYG]
+
+    colorsYG1 = list(Color("#abff00").range_to(Color("#00ffa2"), 26))
+    colorsYG1 = [str(color) for color in colorsYG1]
+
+    colorsGC = list(Color("#00ffa2").range_to(Color("#0ff"), 14))
+    colorsGC = [str(color) for color in colorsGC]
+
+    colorsCB = list(Color("#0ff").range_to(Color("blue"), 24))
+    colorsCB = [str(color) for color in colorsCB]
+
+    colorsBP = list(Color("blue").range_to(Color("purple"), 34))
+    colorsBP = [str(color) for color in colorsBP]
+
+    colors = colorsOY[1:] + colorsYG + colorsYG1[1:] + colorsGC[1:] + colorsCB[1:] + colorsBP[1:26]
+
+    draw_rainbow(colors)
+
+
+def set_color3():
+    colorsYG = list(Color("#ffc").range_to(Color("#9f9"), 38))
+    colorsYG = [str(color) for color in colorsYG]
+
+    colorsGC = list(Color("#9f9").range_to(Color("#6ff"), 38))
+    colorsGC = [str(color) for color in colorsGC]
+
+    colorsCB = list(Color("#6ff").range_to(Color("#66b2ff"), 28))
+    colorsCB = [str(color) for color in colorsCB]
+
+    colorsBP = list(Color("#66b2ff").range_to(Color("#e178d2"), 48))
+    colorsBP = [str(color) for color in colorsBP]
+
+    colors = colorsYG + colorsGC[1:] + colorsCB[1:] + colorsBP[1:38]
+
+    draw_rainbow(colors)
+
+
+def set_color4():
+    colorsYG = list(Color("#ffc").range_to(Color("#cf9"), 32))
+    colorsYG = [str(color) for color in colorsYG]
+
+    colorsYG1 = list(Color("#cf9").range_to(Color("#9fc"), 32))
+    colorsYG1 = [str(color) for color in colorsYG1]
+
+    colorsGC = list(Color("#9fc").range_to(Color("#9ff"), 32))
+    colorsGC = [str(color) for color in colorsGC]
+
+    colorsCB = list(Color("#9ff").range_to(Color("#9cf"), 32))
+    colorsCB = [str(color) for color in colorsCB]
+
+    colorsBP = list(Color("#9cf").range_to(Color("#c9f"), 32))
+    colorsBP = [str(color) for color in colorsBP]
+
+    colors = colorsYG + colorsYG1[1:] + colorsGC[1:] + colorsCB[1:] + colorsBP[1:38]
+
+    draw_rainbow(colors)
+
+
+def set_color5():
+    colorsRO = list(Color("#fcc").range_to(Color("#ffe5cc"), 34))
+    colorsRO = [str(color) for color in colorsRO]
+
+    colorsOY = list(Color("#ffe5cc").range_to(Color("#ffc"), 34))
+    colorsOY = [str(color) for color in colorsOY]
+
+    colorsYG = list(Color("#ffc").range_to(Color("#cfc"), 34))
+    colorsYG = [str(color) for color in colorsYG]
+
+    colorsGC = list(Color("#cfc").range_to(Color("#cff"), 34))
+    colorsGC = [str(color) for color in colorsGC]
+
+    colorsCB = list(Color("#cff").range_to(Color("#cce5ff"), 34))
+    colorsCB = [str(color) for color in colorsCB]
+
+    colorsBP = list(Color("#cce5ff").range_to(Color("#e5ccff"), 34))
+    colorsBP = [str(color) for color in colorsBP]
+
+    colors = colorsRO + colorsOY[1:] + colorsYG + colorsGC[1:] + colorsCB[1:] + colorsBP[1:26]
+
+    draw_rainbow(colors)
+
+
+def draw_rainbow(colors):
+    start_x, start_y = 650, -500
+    sd.resolution = (540, 640)
+    for current_color in colors:
+        center_position = sd.get_point(start_x, start_y)
+        if len(current_color) == 4 and current_color[0] == '#':
+            current_color = '#' + current_color[1] * 2 + current_color[2] * 2 + current_color[3] * 2
+        sd.circle(center_position=center_position, radius=900, color=current_color, width=2)
+        start_y -= 2
+    sd.pause()
+
+
+def main(dia):
+    if dia == '1':
+        set_color()
+    elif dia == '2':
+        set_color1()
+    elif dia == '3':
+        set_color2()
+    elif dia == '4':
+        set_color3()
+    elif dia == '5':
+        set_color4()
+    elif dia == '6':
+        set_color5()
+    else:
+        print('Работа закончена.')
+
+
+print('Выберите диаметр капли:')
+print('1 - 0,5..1 мм\n2 - 0,25 мм\n3 - 0,1..0,15 мм\n4 - 0,04..0,05 мм\n5 - 0,03 мм\n6 - 0,025 мм')
+
+dia = input()
+main(dia)
